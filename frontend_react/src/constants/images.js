@@ -27,6 +27,7 @@ import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import josh from '../assets/FullSizeRender.jpg'
+import reactIcon from '../assets/reactIcon.png'
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -41,6 +42,7 @@ export default {
   mobile,
   api,
   cpp,
+  reactIcon,
   css,
   figma,
   flutter,
