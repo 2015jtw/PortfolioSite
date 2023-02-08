@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import { useState, useEffect } from 'react'
 import {images} from '../../constants'
 import { urlFor, client } from '../../client'
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper';
 
 const abouts = [
   {title: 'Front-End Developer', description: 'I am an experienced Front-End Developer.', imgUrl: images.about01},
@@ -28,7 +28,7 @@ const About = () => {
     <Fragment>
       <h2 className='head-text'>
         I know that 
-        <span> Good Design </span>
+        <span> Good Apps </span>
         <br />
         means 
         <span> Good Business</span>
@@ -53,4 +53,8 @@ const About = () => {
   )
 }
 
-export default AppWrap(About, 'about')
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+  'about',
+  'app__primarybg',
+);
