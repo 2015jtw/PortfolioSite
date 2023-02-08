@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import { useState, useEffect } from 'react'
 import {images} from '../../constants'
 import { urlFor, client } from '../../client'
+import { AppWrap } from '../../wrapper'
 
 const abouts = [
   {title: 'Front-End Developer', description: 'I am an experienced Front-End Developer.', imgUrl: images.about01},
@@ -52,4 +53,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About, 'about')
