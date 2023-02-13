@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
 
     {!isFormSubmitted ? 
-      <div className='app__footer-form app__flex'>
+      <form action='https://formsubmit.co/2015JTW@email.com' method='POST' className='app__footer-form app__flex'>
         <div className="app__flex">
           <input 
             type="text" className="p-text" placeholder='Your name' 
@@ -78,7 +78,7 @@ const Footer = () => {
           type='button' className='p-text' onClick={handleSubmit}>
             {loading ? 'Sending' : 'Send Message'}
         </button>
-      </div>
+      </form>
       : <div><h3 className='head-text'>Thank you for getting in touch!</h3></div>}
     </Fragment>
   )
