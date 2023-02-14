@@ -23,6 +23,19 @@ const Skills = () => {
     });
   }, []);
 
+  
+
+  function byDate(a, b){
+    return new Date(b.year).valueOf() - new Date(a.year).valueOf();
+  }
+
+  function dateCreated(a, b){
+    return new Date(a._createdAt).valueOf() - new Date(b._createdAt).valueOf();
+  }
+
+  experiences.sort(byDate);
+  skills.sort(dateCreated);
+  
   return (
     <>
       <h2 className="head-text">Skills & Experiences</h2>
